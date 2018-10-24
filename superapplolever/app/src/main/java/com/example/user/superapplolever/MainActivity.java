@@ -14,7 +14,7 @@ Button plus;
 Button minus;
 Button mnoj;
 Button dil;
-
+HideClass hideClass = new HideClass();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,8 +31,8 @@ Button dil;
 
 
 
-        double a = Double.valueOf(editText1.getText().toString());
-        double b = Double.valueOf(editText2.getText().toString());
+        final double a = Double.valueOf(editText1.getText().toString());
+        final double b = Double.valueOf(editText2.getText().toString());
 
 
 
@@ -41,8 +41,8 @@ Button dil;
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent intent = new Intent(this,ResultActivity);
+               double temporary = hideClass.sum(a,b);
+                Intent intent = new Intent(MainActivity.this, ResultActivity.class);
                 startActivity(intent);
             }
         });
@@ -50,8 +50,8 @@ Button dil;
         minus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent intent = new Intent(this,ResultActivity);
+                double temporary =hideClass.ext(a,b);
+                Intent intent = new Intent(MainActivity.this, ResultActivity.class);
                 startActivity(intent);
             }
         });
@@ -59,8 +59,8 @@ Button dil;
         mnoj.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent intent = new Intent(this,ResultActivity);
+                double temporary = hideClass.mult(a,b);
+                Intent intent = new Intent(MainActivity.this, ResultActivity.class);
                 startActivity(intent);
             }
         });
@@ -68,8 +68,8 @@ Button dil;
         dil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
-                Intent intent = new Intent(this,ResultActivity);
+                double temporary =  hideClass.div(a,b);
+                Intent intent = new Intent(MainActivity.this, ResultActivity.class);
                 startActivity(intent);
             }
         });

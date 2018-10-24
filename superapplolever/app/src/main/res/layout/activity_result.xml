@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="@android:color/holo_blue_dark"
-        android:text="@string/exit"
+        android:text="exit"
         tools:background="@color/colorPrimary"
         tools:textColor="@android:color/background_light" />
 
