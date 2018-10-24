@@ -21,6 +21,8 @@ public class ResultActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent2 = new Intent(this, MainActivity);
                 startActivity(intent2);
+
+
             }
         });
 

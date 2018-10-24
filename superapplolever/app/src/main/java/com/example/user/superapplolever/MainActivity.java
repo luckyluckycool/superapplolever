@@ -27,6 +27,10 @@ Button dil;
         dil = findViewById(R.id.dil);
 
 
+
+
+
+
         double a = Double.valueOf(editText1.getText().toString());
         double b = Double.valueOf(editText2.getText().toString());
 
