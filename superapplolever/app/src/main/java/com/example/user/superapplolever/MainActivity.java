@@ -25,7 +25,7 @@ Button dil;
         minus = findViewById(R.id.minus);
         mnoj = findViewById(R.id.mnoj);
         dil = findViewById(R.id.dil);
-
+        
 
         double a = Double.valueOf(editText1.getText().toString());
         double b = Double.valueOf(editText2.getText().toString());
