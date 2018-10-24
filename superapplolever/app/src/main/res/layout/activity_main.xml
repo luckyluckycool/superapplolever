@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/edittext1"
+        android:id="@+id/editText1"
         android:layout_width="134dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -15,7 +15,7 @@
         android:text="1" />
 
     <EditText
-
+        android:id="@+id/editText2"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
