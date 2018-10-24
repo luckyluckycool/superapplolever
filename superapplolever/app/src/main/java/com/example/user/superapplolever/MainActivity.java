@@ -1,7 +1,9 @@
 package com.example.user.superapplolever;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -12,6 +14,7 @@ Button plus;
 Button minus;
 Button mnoj;
 Button dil;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +25,21 @@ Button dil;
         minus = findViewById(R.id.minus);
         mnoj = findViewById(R.id.mnoj);
         dil = findViewById(R.id.dil);
-        
+
+
+        double a = Double.valueOf(editText1.getText().toString());
+        double b = Double.valueOf(editText2.getText().toString());
+
+
+        Intent intent = new Intent(this,ResultActivity);
+        startActivity(intent);
+
+
+        plus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 }
