@@ -35,14 +35,42 @@ Button dil;
         double b = Double.valueOf(editText2.getText().toString());
 
 
-        Intent intent = new Intent(this,ResultActivity);
-        startActivity(intent);
+
 
 
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+                Intent intent = new Intent(this,ResultActivity);
+                startActivity(intent);
+            }
+        });
+
+        minus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(this,ResultActivity);
+                startActivity(intent);
+            }
+        });
+
+        mnoj.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(this,ResultActivity);
+                startActivity(intent);
+            }
+        });
+
+        dil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                
+                Intent intent = new Intent(this,ResultActivity);
+                startActivity(intent);
             }
         });
     }

@@ -1,20 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="134dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:text="1" />
 
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="238dp"
+        android:layout_marginTop="0dp"
+        android:text="1" />
+
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="65dp"
+        android:layout_height="69dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="215dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/mnoj"
+        android:layout_width="65dp"
+        android:layout_height="69dp"
+        android:layout_alignTop="@+id/plus"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="202dp"
+        android:layout_marginTop="0dp" />
+
+
+    <Button
+        android:id="@+id/dil"
+        android:layout_width="65dp"
+        android:layout_height="69dp"
+        android:layout_alignTop="@+id/plus"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="297dp" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="65dp"
+        android:layout_height="69dp"
+        android:layout_alignTop="@+id/plus"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="-1dp"
+        android:text="-" />
+
+
+</RelativeLayout>
+
+
+
+<<<<<<< HEAD
 
 
 </android.support.constraint.ConstraintLayout>
+=======
+>>>>>>> origin/master
