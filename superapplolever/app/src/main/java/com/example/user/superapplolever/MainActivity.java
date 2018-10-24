@@ -14,6 +14,7 @@ Button plus;
 Button minus;
 Button mnoj;
 Button dil;
+double temporary;
 HideClass hideClass = new HideClass();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +32,6 @@ HideClass hideClass = new HideClass();
 
 
 
-        final double a = Double.valueOf(editText1.getText().toString());
-        final double b = Double.valueOf(editText2.getText().toString());
-
 
 
 
@@ -41,8 +39,12 @@ HideClass hideClass = new HideClass();
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               double temporary = hideClass.sum(a,b);
+
+                final double a = Double.valueOf(editText1.getText().toString());
+                final double b = Double.valueOf(editText2.getText().toString());
+                temporary = hideClass.sum(a,b);
                 Intent intent = new Intent(MainActivity.this, ResultActivity.class);
+                intent.putExtra("myname", temporary);
                 startActivity(intent);
             }
         });
@@ -50,7 +52,10 @@ HideClass hideClass = new HideClass();
         minus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                double temporary =hideClass.ext(a,b);
+
+                final double a = Double.valueOf(editText1.getText().toString());
+                final double b = Double.valueOf(editText2.getText().toString());
+                 temporary =hideClass.ext(a,b);
                 Intent intent = new Intent(MainActivity.this, ResultActivity.class);
                 startActivity(intent);
             }
@@ -59,7 +64,10 @@ HideClass hideClass = new HideClass();
         mnoj.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                double temporary = hideClass.mult(a,b);
+
+                final double a = Double.valueOf(editText1.getText().toString());
+                final double b = Double.valueOf(editText2.getText().toString());
+                 temporary = hideClass.mult(a,b);
                 Intent intent = new Intent(MainActivity.this, ResultActivity.class);
                 startActivity(intent);
             }
@@ -68,7 +76,10 @@ HideClass hideClass = new HideClass();
         dil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                double temporary =  hideClass.div(a,b);
+
+                final double a = Double.valueOf(editText1.getText().toString());
+                final double b = Double.valueOf(editText2.getText().toString());
+                 temporary =  hideClass.div(a,b);
                 Intent intent = new Intent(MainActivity.this, ResultActivity.class);
                 startActivity(intent);
             }

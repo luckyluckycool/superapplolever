@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_marginStart="18dp"
-        android:text="1" />
+        android:text="" />
 
     <EditText
         android:id="@+id/editText2"
@@ -21,7 +21,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="238dp"
         android:layout_marginTop="0dp"
-        android:text="1" />
+        android:text="" />
 
 
     <Button
@@ -41,7 +41,8 @@
         android:layout_alignTop="@+id/plus"
         android:layout_alignParentStart="true"
         android:layout_marginStart="202dp"
-        android:layout_marginTop="0dp" />
+        android:layout_marginTop="0dp"
+        android:text="*"/>
 
 
     <Button
@@ -50,7 +51,8 @@
         android:layout_height="69dp"
         android:layout_alignTop="@+id/plus"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="297dp" />
+        android:layout_marginStart="297dp"
+        android:text="/"/>
 
     <Button
         android:id="@+id/minus"
